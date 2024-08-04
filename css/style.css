@@ -27,6 +27,21 @@ body {
 
 .add-task {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.error {
+  margin: 0;
+  background-color: #ff107a;
+  text-align: center;
+  padding: 5px;
+  color: #e1e1e1;
+  font-size: 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 
 #taskInput {
@@ -58,6 +73,28 @@ body {
   display: flex;
   gap: 15px;
   cursor: pointer;
+}
+
+.complete-notification {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 34px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom: 8px solid #0f0;
+}
+
+.delete-notification {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 34px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom: 8px solid #f00;
 }
 
 .scroll {
