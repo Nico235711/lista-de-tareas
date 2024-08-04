@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  background-image: url(../img/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px 0;
+  margin-bottom: 15px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: -15px;
+}
+
+.add-task {
+  margin-bottom: 15px;
+}
+
+#taskInput {
+  padding: 5px;
+  border-radius: 8px;
+  border: 2px solid #e1e1e1;
+}
+
+.taskButton {
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #ff107a;
+  border: 2px solid #ff107a;
+  color: #e1e1e1;
+  font-size: 16px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e1e1;
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.check-trash {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.scroll {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar styles */
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+  }
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
